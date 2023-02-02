@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+
+\title{Basic Structures }
+\author{Clayton Engle}
+\date{Lab Submission}
+
+\begin{document}
+\maketitle
+
+Question 1:   Answer C: \ $x \in \mathbb{Z}$ : $x$ is odd and $\ 3 \le x  \le 14.$ \\
+   
+Question 2:   Answer D: \ $\emptyset \subsetneq B$
+\begin{align}
+    \text{Logic for D:\ } & \text{The\ } \emptyset \subsetneq  \forall S \text{, given\ } S\ne\emptyset \\
+    \text{Additionally:\ }& \not\exists S \text{ such that } S \subsetneq S
+\end{align}
+
+Question 3:   Answer B: \ $\{3, 4 \} \subsetneq A$ \\
+
+Question 4:   Answer B: \ $\{7, 11, 13 \} \subsetneq A$
+\begin{align}
+    \text{A\ } & = \{ x \in \mathbb{Z} \text{: x is a prime number} \}  \\
+    \text{B\ } & = \{ 4, 7, 9, 11, 13, 14 \} \\
+     A \cap B & = \{ x \mid x \in A \text{ and } x \in B \} \\
+      A \cap B & = \{ 7, 11, 13 \} 
+\end{align}
+
+Question 5:   Answer B: \ $\{3, 5, 9, 15 \} \subsetneq A$
+\begin{align}
+    \text{A\ } & = \{ x \in \mathbb{Z} \text{: x is an even number} \}  \\
+    \text{C\ } & = \{ 3, 5, 9, 12, 15, 16 \} \\
+     C - A & \implies \{ x \mid x \in C \text{ and } x \notin A \} \\
+      C - A & = \{ 3, 5, 9, 15 \} 
+\end{align}
+
+Question 6:   Answer C: \ $\{3, 7, 8, 9, 13, 16 \}$
+\begin{align}
+    \text{C\ } & = \{ 3, 5, 9, 12, 15, 16 \}  \\
+    \text{D\ } & = \{ 5, 7, 8, 12, 13, 15 \} \\
+    C \oplus D & \implies \{ x \mid x \in C \text{ or } x \in D \text{, but not both} \}  \\
+    C \oplus D & \implies (C \cup D) - (C \cap D) \\
+    C \oplus D & = \{ 3, 7, 8, 9, 13, 16 \} 
+\end{align}
+Question 7:   Answer A: \ $\{3, 5, 9, 15 \} \subsetneq A$
+\begin{align}
+    \text{A\ } & = \{ x \in \mathbb{Z} \text{: x is an even number} \}  \\
+    \text{B\ } & = \{ x \in \mathbb{Z} \text{: x is a prime number} \}  \\
+    \text{D\ } & = \{ 5, 7, 8, 12, 13, 15 \} \\
+     D - (A \cup B) & \implies \{ x \mid x \in D \text{ and } x \notin A \text{ or } B \} \\
+     D - (A \cup B) & = \{ 15 \}  \\
+\end{align}
+Question 8:   Answer D: \ $ B \cap C$
+\begin{align}
+    \overline{D} = (A \cup B) 
+\end{align}
+
+Question 9:   Answer A: \ Idempotent Law
+\begin{align}
+    (A \cap B) \cup (A \cap B) &= A \cap B \\
+\text{Proof:} \\
+x \in (A \cap B) \cup (A \cap B) &\implies x \in A \cap B \text{ or } x \in A \cap B \\
+&\implies x \in A \text{ and } x \in B \\
+&\implies x \in A \cap B 
+\end{align}
+
+Question 10:   Answer D: \ $ B \cap C$
+\begin{align}
+A \cap A^2 &= \emptyset \\
+\text{Proof:} \\
+A &= \{a, b\} \\
+A^2 &= \{(a, a), (a, b), (b, a), (b, b)\} \\
+x \exists A \cap A^2 &\implies x \exists A \text{ and } x \exists A^2 \\
+&\implies x \text{ is an element of } A \text{ and an ordered pair of elements from } A \\
+&\implies x \text{ is a contradiction} \\
+&\implies A \cap A^2 = \emptyset \\
+\end{align}
+\end{document}
